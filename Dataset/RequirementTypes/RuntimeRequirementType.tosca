@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:winery="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:ns2="http://www.eclipse.org/winery/model/selfservice" id="winery-defs-for_ns39-RuntimeRequirementType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/RequirementTypes">
-    <tosca:Import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaBaseTypes" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/RequirementTypes/RootRequirementType.tosca" importType="http://docs.oasis-open.org/tosca/ns/2011/12"/>
+    <tosca:Import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaBaseTypes" location="https://raw.githubusercontent.com/jacopogiallo/TOSCA-MART/master/Dataset/RequirementTypes/RootRequirementType.tosca" importType="http://docs.oasis-open.org/tosca/ns/2011/12"/>
     <tosca:RequirementType name="RuntimeRequirementType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/RequirementTypes">
         <tosca:DerivedFrom xmlns:tbt="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaBaseTypes" typeRef="tbt:RootRequirementType"/>
     </tosca:RequirementType>
