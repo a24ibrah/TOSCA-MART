@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:winery="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:ns2="http://www.eclipse.org/winery/model/selfservice" id="winery-defs-for_ns55-AmazonEC2VMNodeType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes">
+    <tosca:Import namespace="https://github.com/jacopogiallo/tosca-mart-repo/CapabilityTypes" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/CapabilityTypes/OSContainerCapabilityType.tosca" importType="http://docs.oasis-open.org/tosca/ns/2011/12"/>
+    <tosca:Import namespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/NodeTypes/VirtualMachineNodeType.tosca" importType="http://docs.oasis-open.org/tosca/ns/2011/12"/>
+    <tosca:Import namespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes/propertiesdefinition/winery" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/PropertiesDefinition/AmazonEC2VMNodeType.xsd" importType="http://www.w3.org/2001/XMLSchema" winery:wpd="true"/>
+    <tosca:NodeType name="AmazonEC2VMNodeType" abstract="no" final="no" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes" winery:bordercolor="#3742e3">
+        <winery:PropertiesDefinition elementname="Properties" namespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes/propertiesdefinition/winery">
+            <winery:properties>
+                <winery:key>DiskSize</winery:key>
+                <winery:type>xsd:decimal</winery:type>
+            </winery:properties>
+            <winery:properties>
+                <winery:key>IPAddress</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+            <winery:properties>
+                <winery:key>MemorySize</winery:key>
+                <winery:type>xsd:decimal</winery:type>
+            </winery:properties>
+            <winery:properties>
+                <winery:key>NumberOfCPUs</winery:key>
+                <winery:type>xsd:decimal</winery:type>
+            </winery:properties>
+            <winery:properties>
+                <winery:key>Region</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+            <winery:properties>
+                <winery:key>User</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+        </winery:PropertiesDefinition>
+        <tosca:DerivedFrom xmlns:ns55="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes" typeRef="ns55:VirtualMachineNodeType"/>
+        <tosca:PropertiesDefinition xmlns:ns61="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes/propertiesdefinition/winery" type="ns61:Properties"/>
+        <tosca:CapabilityDefinitions>
+            <tosca:CapabilityDefinition xmlns:ns37="https://github.com/jacopogiallo/tosca-mart-repo/CapabilityTypes" name="Container" capabilityType="ns37:OSContainerCapabilityType" lowerBound="0" upperBound="unbounded"/>
+        </tosca:CapabilityDefinitions>
+        <tosca:Interfaces>
+            <tosca:Interface name="Lifecycle">
+                <tosca:Operation name="Install"/>
+                <tosca:Operation name="Start"/>
+                <tosca:Operation name="Stop"/>
+                <tosca:Operation name="Uninstall"/>
+            </tosca:Interface>
+        </tosca:Interfaces>
+    </tosca:NodeType>
+</tosca:Definitions>

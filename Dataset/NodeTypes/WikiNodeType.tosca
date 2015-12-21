@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:winery="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:ns2="http://www.eclipse.org/winery/model/selfservice" id="winery-defs-for_ns55-WikiNodeType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes">
+    <tosca:Import namespace="https://github.com/jacopogiallo/tosca-mart-repo/RequirementTypes" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/RequirementTypes/PHPRuntimeRequirementType.tosca" importType="http://docs.oasis-open.org/tosca/ns/2011/12"/>
+    <tosca:Import namespace="https://github.com/jacopogiallo/tosca-mart-repo/RequirementTypes" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/RequirementTypes/DBConnectionRequirementType.tosca" importType="http://docs.oasis-open.org/tosca/ns/2011/12"/>
+    <tosca:Import namespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/NodeTypes/WebApplicationNodeType.tosca" importType="http://docs.oasis-open.org/tosca/ns/2011/12"/>
+    <tosca:Import namespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes/propertiesdefinition/winery" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/PropertiesDefinition/WikiNodeType.xsd" importType="http://www.w3.org/2001/XMLSchema" winery:wpd="true"/>
+    <tosca:NodeType name="WikiNodeType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes" winery:bordercolor="#bb984c">
+        <winery:PropertiesDefinition elementname="Properties" namespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes/propertiesdefinition/winery">
+            <winery:properties>
+                <winery:key>Endpoint</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+        </winery:PropertiesDefinition>
+        <tosca:DerivedFrom xmlns:ns55="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes" typeRef="ns55:WebApplicationNodeType"/>
+        <tosca:PropertiesDefinition xmlns:ns61="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes/propertiesdefinition/winery" type="ns61:Properties"/>
+        <tosca:RequirementDefinitions>
+            <tosca:RequirementDefinition xmlns:ns39="https://github.com/jacopogiallo/tosca-mart-repo/RequirementTypes" name="RuntimeSupport" requirementType="ns39:PHPRuntimeRequirementType" lowerBound="1" upperBound="1"/>
+            <tosca:RequirementDefinition xmlns:ns39="https://github.com/jacopogiallo/tosca-mart-repo/RequirementTypes" name="DatabaseConnection" requirementType="ns39:DBConnectionRequirementType" lowerBound="1" upperBound="1"/>
+        </tosca:RequirementDefinitions>
+    </tosca:NodeType>
+</tosca:Definitions>

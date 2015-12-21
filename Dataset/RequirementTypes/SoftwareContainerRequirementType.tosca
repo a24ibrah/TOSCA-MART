@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:winery="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:ns2="http://www.eclipse.org/winery/model/selfservice" id="winery-defs-for_ns39-SoftwareContainerRequirementType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/RequirementTypes">
+    <tosca:Import namespace="https://github.com/jacopogiallo/tosca-mart-repo/RequirementTypes" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/RequirementTypes/ContainerRequirementType.tosca" importType="http://docs.oasis-open.org/tosca/ns/2011/12"/>
+    <tosca:RequirementType name="SoftwareContainerRequirementType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/RequirementTypes">
+        <tosca:DerivedFrom xmlns:ns39="https://github.com/jacopogiallo/tosca-mart-repo/RequirementTypes" typeRef="ns39:ContainerRequirementType"/>
+    </tosca:RequirementType>
+</tosca:Definitions>

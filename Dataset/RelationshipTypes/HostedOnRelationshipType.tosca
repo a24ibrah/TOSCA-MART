@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:winery="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:ns2="http://www.eclipse.org/winery/model/selfservice" id="winery-defs-for_ns49-HostedOnRelationshipType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/RelationshipTypes">
+    <tosca:Import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaBaseTypes" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/RelationshipTypes/RootRelationshipType.tosca" importType="http://docs.oasis-open.org/tosca/ns/2011/12"/>
+    <tosca:RelationshipType name="HostedOnRelationshipType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/RelationshipTypes" winery:color="#f88658">
+        <tosca:DerivedFrom xmlns:tbt="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaBaseTypes" typeRef="tbt:RootRelationshipType"/>
+    </tosca:RelationshipType>
+</tosca:Definitions>

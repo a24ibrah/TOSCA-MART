@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:winery="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:ns2="http://www.eclipse.org/winery/model/selfservice" id="winery-defs-for_ns37-PHPRuntimeCapabilityType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/CapabilityTypes">
+    <tosca:Import namespace="https://github.com/jacopogiallo/tosca-mart-repo/CapabilityTypes" 
+		location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/CapabilityTypes/RuntimeCapabilityType.tosca" 
+		importType="http://docs.oasis-open.org/tosca/ns/2011/12"/>
+    <tosca:CapabilityType name="PHPRuntimeCapabilityType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/CapabilityTypes">
+        <tosca:DerivedFrom xmlns:ns37="https://github.com/jacopogiallo/tosca-mart-repo/CapabilityTypes" typeRef="ns37:RuntimeCapabilityType"/>
+    </tosca:CapabilityType>
+</tosca:Definitions>

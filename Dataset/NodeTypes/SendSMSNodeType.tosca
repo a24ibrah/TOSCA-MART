@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tosca:Definitions xmlns:tosca="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:winery="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:ns2="http://www.eclipse.org/winery/model/selfservice" id="winery-defs-for_ns55-SendSMSNodeType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes">
+    <tosca:Import namespace="https://github.com/jacopogiallo/tosca-mart-repo/RequirementTypes" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/RequirementTypes/WSRuntimeRequirementType.tosca" importType="http://docs.oasis-open.org/tosca/ns/2011/12"/>
+    <tosca:Import namespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/NodeTypes/WSNodeType.tosca" importType="http://docs.oasis-open.org/tosca/ns/2011/12"/>
+    <tosca:Import namespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes/propertiesdefinition/winery" location="https://github.com/jacopogiallo/TOSCA-MART/Dataset/PropertiesDefinition/SendSMSNodeType.xsd" importType="http://www.w3.org/2001/XMLSchema" winery:wpd="true"/>
+    <tosca:NodeType name="SendSMSNodeType" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes" winery:bordercolor="#8da00d">
+        <winery:PropertiesDefinition elementname="Properties" namespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes/propertiesdefinition/winery">
+            <winery:properties>
+                <winery:key>RESTEndpoint</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+            <winery:properties>
+                <winery:key>SOAPEndpoint</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+        </winery:PropertiesDefinition>
+        <tosca:DerivedFrom xmlns:ns55="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes" typeRef="ns55:WSNodeType"/>
+        <tosca:PropertiesDefinition xmlns:ns61="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes/propertiesdefinition/winery" type="ns61:Properties"/>
+        <tosca:RequirementDefinitions>
+            <tosca:RequirementDefinition xmlns:ns39="https://github.com/jacopogiallo/tosca-mart-repo/RequirementTypes" name="WSRuntimeSupport" requirementType="ns39:WSRuntimeRequirementType" lowerBound="1" upperBound="1"/>
+        </tosca:RequirementDefinitions>
+        <tosca:Interfaces>
+            <tosca:Interface name="Lifecycle">
+                <tosca:Operation name="Install"/>
+                <tosca:Operation name="Start"/>
+                <tosca:Operation name="Stop"/>
+                <tosca:Operation name="Uninstall"/>
+            </tosca:Interface>
+        </tosca:Interfaces>
+    </tosca:NodeType>
+</tosca:Definitions>
