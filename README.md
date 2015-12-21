@@ -24,10 +24,10 @@ implementation of another matching technique, and about the dataset exploited to
 
 #### TOSCA-MART
 The _TOSCA-MART/src_ folder contains the prototype implementation of the TOSCA-MART matchmaking and adaptation approach. 
-More precisely, the concrete implementation of TOSCA-MART is given by the _TOSCAMart.java_ file (contained in the subfolder
-named _mart_). 
+More precisely, the concrete implementation of TOSCA-MART is given by ```TOSCAMart``` Java class (defined in
+_TOSCA-MART/src/mart/TOSCAMart.java_).
 
-To operate TOSCA-MART, one simply have to invoke the (static) method ```run``` of ```TOSCAMart``` by providing it with the
+To operate TOSCA-MART, one simply have to invoke the (static) ```run``` method of ```TOSCAMart``` by providing it with the
 following three arguments:
 - ```nodeTypeLoc```, that is a string containing the URL where to retrieve the TOSCA node type to be matched.
 - ```servTempLocs```, that is a string containing the URL where to retrieve (a text file containing) all the URLs of the service templates available in the repository. 
