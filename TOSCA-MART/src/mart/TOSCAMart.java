@@ -625,7 +625,7 @@ public class TOSCAMart {
     /**
      * This (runnable) method is used to test the "TOSCA-MART" matchmaking and adaptation approach.
      *
-     * @param args It takes a set of String(s). The former one contains the location where to retrieve the NodeType to be matched, the latter contains the number of implementations to be generated, while the in between one(s) represent the location(s) of the ServiceTemplate(s) composing the repository of available cloud application(s).
+     * @param args It takes three strings. The first one contains the location where to retrieve the NodeType to be matched, the latter contains the number of implementations to be generated, while the second one is the URL of a txt file containing the locations of the ServiceTemplates composing the repository of available cloud applications.
      */
     public static void main(String[] args) {
         if(args.length<3) {
