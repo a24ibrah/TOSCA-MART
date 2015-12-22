@@ -1,1 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes/propertiesdefinition/winery" xmlns="http://www.w3.org/2001/XMLSchema"><element name="Properties"><complexType><sequence xmlns:xsd="http://www.w3.org/2001/XMLSchema"><element name="RESTEndpoint" type="xsd:string"/><element name="SOAPEndpoint" type="xsd:string"/></sequence></complexType></element></schema>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://github.com/jacopogiallo/tosca-mart-repo/NodeTypes/propertiesdefinition/winery" xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="Properties">
+        <complexType>
+            <sequence xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                <element name="RESTEndpoint" type="xsd:string"/>
+                <element name="SOAPEndpoint" type="xsd:string"/>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
