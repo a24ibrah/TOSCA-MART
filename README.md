@@ -10,12 +10,16 @@ If you wish to reuse the sources or the dataset of TOSCA specifications in this 
 cite the above mentioned paper. Below you can find the BibTex reference:
 ```
 @article{Soldani2016,
-  author = {Soldani, Jacopo and Binz, Tobias and Breitenbücher, Uwe and Leymann, Frank and Brogi, Antonio},
-  title = {TOSCA-MART: A Method for Adapting and Reusing Cloud Applications},
-  journal = {Journal of Systems and Software},
-  year = {2016},
-  note = {[In press]}
-}
+ author = {Jacopo Soldani and Tobias Binz and Uwe Breitenb\"{u}cher and Frank Leymann and Antonio Brogi},
+ title = {ToscaMart: A Method for Adapting and Reusing Cloud Applications},
+ journal = {Journal of System and Software},
+ volume = {113},
+ pages = {395-406},
+ year = {2016},
+ issn = {0164-1212},
+ doi = {http://dx.doi.org/10.1016/j.jss.2015.12.025},
+ url = {http://www.sciencedirect.com/science/article/pii/S0164121215002903}
+} 
 ```
 
 ## <a name="source"></a> About the source code
