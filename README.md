@@ -2,7 +2,7 @@
 This repository contains the [source code](https://github.com/jacopogiallo/TOSCA-MART/blob/master/README.md#source) of a Java implementation of the TOSCA-MART matchmaking and adaptation approach, which has been presented in 
 > _J. Soldani, T. Binz, U. Breitenbücher, F. Leymann, A. Brogi. <br>
 > **TOSCA-MART: A Method for Adapting and Reusing Cloud Applications.** <br>
-> [To appear in: Journal of Systems and Software]._ 
+> Journal of Systems and Software, volume 113, pages 395-406, March 2016._ 
 
 It also contains a [dataset](https://github.com/jacopogiallo/TOSCA-MART#dataset) repository of TOSCA application specifications that can be used to test TOSCA-MART (or other approaches for matchmaking and reusing TOSCA application specifications). 
 
@@ -50,7 +50,7 @@ As a result, return the methods returns the list of strings containing the names
 ## <a name="dataset"></a> About the dataset
 The **Dataset** folder contains the TOSCA definitions of 1395 different service templates (along with all the types needed to define them). The URLs of all available service templates are listed in [service-templates.txt](https://raw.githubusercontent.com/jacopogiallo/TOSCA-MART/master/Dataset/ServiceTemplates/service-templates.txt) (one per line).
 
-More precisely, there are 279 service templates providing different deployment solutions for 7 applications (4 web services and 3 web applications - with a database in the back-end).
+More precisely, there are 279 service templates providing different deployment solutions for 7 applications (4 web services, and 3 web applications).
 The application stacks in such service templates are then replicated 2, 3, 4 and 5 times to permit increasing the amount of features provided by a service template's topology. (We employ the following naming convention:
 [Moodle_X-2.tosca](https://raw.githubusercontent.com/jacopogiallo/TOSCA-MART/master/Dataset/ServiceTemplates/Moodle_X-2.tosca), [Moodle_X-3.tosca](https://raw.githubusercontent.com/jacopogiallo/TOSCA-MART/master/Dataset/ServiceTemplates/Moodle_X-3.tosca), [Moodle_X-4.tosca](https://raw.githubusercontent.com/jacopogiallo/TOSCA-MART/master/Dataset/ServiceTemplates/Moodle_X-4.tosca), and [Moodle_X-5.tosca](https://raw.githubusercontent.com/jacopogiallo/TOSCA-MART/master/Dataset/ServiceTemplates/Moodle_X-5.tosca), are service templates whose topology is that of [Moodle_X.tosca](https://raw.githubusercontent.com/jacopogiallo/TOSCA-MART/master/Dataset/ServiceTemplates/Moodle_X.tosca) replicated 2, 3, 4, and 5 times, respectively).
 
