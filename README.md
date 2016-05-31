@@ -1,7 +1,7 @@
 # TOSCA-MART
 This repository contains the [source code](https://github.com/jacopogiallo/TOSCA-MART/blob/master/README.md#source) of a Java implementation of the TOSCA-MART matchmaking and adaptation approach, which has been presented in 
 > _J. Soldani, T. Binz, U. Breitenbücher, F. Leymann, A. Brogi. <br>
-> **TOSCA-MART: A Method for Adapting and Reusing Cloud Applications.** <br>
+> [**TOSCA-MART: A Method for Adapting and Reusing Cloud Applications.**](http://www.sciencedirect.com/science/article/pii/S0164121215002903) <br>
 > Journal of Systems and Software, volume 113, pages 395-406, March 2016._ 
 
 It also contains a [dataset](https://github.com/jacopogiallo/TOSCA-MART#dataset) repository of TOSCA application specifications that can be used to test TOSCA-MART (or other approaches for matchmaking and reusing TOSCA application specifications). 
